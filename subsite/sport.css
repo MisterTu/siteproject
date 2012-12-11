@@ -1,0 +1,245 @@
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+
+nav ul {
+	line-height: 30px;
+}
+
+nav li {
+	float: right;
+	position: relative;
+	background: black;
+}
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: lightgrey;
+}
+
+#action:hover {
+	color: red;
+}
+
+#comedy:hover {
+	color: orange;
+}
+
+#drama:hover {
+	color: dodgerblue;
+}
+
+#other li:hover a {
+	color: lawngreen;
+}
+
+#other li:hover ul a {
+	color: lightgrey;
+}
+
+#other li:hover ul a:hover {
+	color: white;
+}
+
+nav ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+
+nav ul li:hover ul {
+	visibility: visible;
+}
+
+header img {
+	position: relative;
+	z-index: 100;
+	left: 20px;
+	top: 20px;
+}
+
+/* ------------------------------------------------- */
+
+
+section {
+	position: relative;
+	font-size: 19px;
+	background-color: white;
+	padding-top: 10px;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+header {
+	background-image: url(image/headersport.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	box-shadow: inset 0 0 60px black;
+	background-color: aliceblue;
+}
+
+h1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 35px;
+	padding: 10px;
+	margin: 30px;
+	text-shadow: 0 0 5px black;
+	color: white;
+}
+
+h2 {
+	font-size: 30px;
+	padding: 20px;
+	color: white;
+	text-shadow: 2px 2px 1.5px black;
+}
+
+p {
+	text-align: justify;
+}
+
+/* ------------------------------------------------- */
+
+#landscape {
+	background-color: PaleTurquoise;
+	background: -webkit-radial-gradient(circle, white, PaleTurquoise);
+	background: -moz-radial-gradient(circle, white, PaleTurquoise);
+	position: relative;
+	margin-right: 100px;
+	margin-left: 100px;
+	height: 350px;
+	overflow: hidden;
+}
+
+.places {
+	position: absolute;
+	height: 100%;
+}
+
+#hajime {
+	left: 45%;
+	animation: rightslide 1s ease-out;
+}
+
+#major {
+	left: 28%;
+	animation: appear 0.76s,
+				leftslide 1s ease-out 0.75s;
+}
+
+#ookiku {
+	right: 18%;
+	animation: appear 1.6s,
+				rightslide2 1s ease-out 1.5s;
+}
+
+#kuroko {
+	left: 0%;
+	animation: appear 2.27s,
+				leftslide 1s ease-out 2.25s;
+}
+
+#yakitate {
+	right: 2%;
+	animation: appear 3.1s, 
+				rightslide2 1s ease-out 3s;
+}
+
+@keyframes rightslide {
+	0% {left: -100%;}
+}
+
+@keyframes leftslide {
+	0% {left: 100%;}
+}
+
+@keyframes rightslide2 {
+	0% {right: 100%;}
+}
+
+@keyframes appear {
+	0% 		{opacity: 0;}
+	99% 	{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+/*
+
+h1 wechselt wenn man auf die charaktere hovert
+
+*/
+
+footer {
+	margin-top: 10px;
+	float: right;
+	padding: 3px;
+	box-shadow: 0 0 5px black;
+	border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 599px) {
+
+	header img {
+		width: 100px;
+		top: 20px;
+	}
+
+	h1 {
+		top: 60px;
+		left: 104px;
+		margin: 0;
+	}
+
+	nav ul li:hover ul {
+		visibility: hidden;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	h2 {
+		font-size: 28px;
+	}
+
+	section ol li {
+		padding: 50px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	#landscape {
+		margin-right: 30px;
+		margin-left: 30px;
+		height: 250px;
+	}
+
+	.places {
+		position: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#landscape {
+		height: 150px;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+	#landscape {
+		height: 100px;
+	}
+
+}

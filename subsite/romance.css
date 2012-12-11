@@ -1,0 +1,205 @@
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+
+nav ul {
+	line-height: 30px;
+}
+
+nav li {
+	float: right;
+	position: relative;
+	background: black;
+}
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: lightgrey;
+}
+
+#action:hover {
+	color: red;
+}
+
+#comedy:hover {
+	color: orange;
+}
+
+#drama:hover {
+	color: dodgerblue;
+}
+
+#other li:hover a {
+	color: lawngreen;
+}
+
+#other li:hover ul a {
+	color: lightgrey;
+}
+
+#other li:hover ul a:hover {
+	color: white;
+}
+
+nav ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+
+nav ul li:hover ul {
+	visibility: visible;
+}
+
+header img {
+	position: relative;
+	z-index: 100;
+	left: 20px;
+	top: 20px;
+}
+
+/* ------------------------------------------------- */
+
+
+section {
+	position: relative;
+	font-size: 19px;
+	background-color: white;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 10px;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+header {
+	background-image: url(image/headerromance.jpg);
+	background-size: cover;
+	position: relative;
+	box-shadow: inset 0 0 60px black;
+	background-color: aliceblue;
+}
+
+h1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 35px;
+	padding: 10px;
+	margin: 30px;
+	text-shadow: 0 0 5px black;
+	color: white;
+}
+
+h2 {
+	font-size: 30px;
+	padding: 20px;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+p {
+	text-align: justify;
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 65%;
+	padding: 10px;
+	line-height: 22px;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+
+/* ------------------------------------------------- */
+
+.places {
+	position: relative;
+	height: 300px;
+	margin-bottom: 30px;
+	overflow: auto;
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+}
+
+.pics {
+	height: 90%;
+	width: 30%;
+	background-color: white;
+	position: relative;
+	top: 5%;
+	left: 2%;
+	box-shadow: 0 0 5px black;
+	border-radius: 5px;
+}
+
+#kanonpic {
+	background-image: url(image/kanon.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#toradorapic {
+	background-image: url(image/toradora.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#onegaipic {
+	background-image: url(image/onegai.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#clannadpic {
+	background-image: url(image/clannad.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#kimikisspic {
+	background-image: url(image/kimikiss.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+@media screen and (max-width: 599px) {
+
+	header img {
+		width: 100px;
+		top: 20px;
+	}
+
+	h1 {
+		top: 60px;
+		left: 104px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li:hover ul {
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 767px){
+	h2 {
+		font-size: 28px;
+	}
+
+	section ol li {
+		padding: 50px;
+	}
+
+}

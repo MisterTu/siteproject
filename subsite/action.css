@@ -1,0 +1,194 @@
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+#actionsite {
+	background: url(image/dragonball.jpg);
+	background-size: contain;
+}
+
+
+nav ul {
+	line-height: 30px;
+}
+
+nav li {
+	float: right;
+	position: relative;
+	background: black;
+}
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: lightgrey;
+}
+
+#action:hover {
+	color: red;
+}
+
+#comedy:hover {
+	color: orange;
+}
+
+#drama:hover {
+	color: dodgerblue;
+}
+
+#other li:hover a {
+	color: lawngreen;
+}
+
+#other li:hover ul a {
+	color: lightgrey;
+}
+
+#other li:hover ul a:hover {
+	color: white;
+}
+
+nav ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+
+nav ul li:hover ul {
+	visibility: visible;
+}
+
+header img {
+	position: relative;
+	z-index: 100;
+	left: 20px;
+	top: 20px;
+}
+
+section {
+	position: relative;
+	font-size: 19px;
+	background-color: white;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+header {
+	background-image: url(image/dragonball.jpg);
+	background-size: cover;
+	position: relative;
+	box-shadow: inset 0 0 60px black;
+	background-color: aliceblue;
+}
+
+h1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 35px;
+	padding: 10px;
+	margin: 30px;
+	text-shadow: 0 0 5px black;
+	color: white;
+
+}
+
+section ol li {
+	padding: 100px;
+}
+
+h2 {
+	color: lightgrey;
+	font-size: 60px;
+	text-shadow: 	5px 5px 1.5px black;
+	float: right;
+	position: relative;
+	right: 10px;
+	top: 230px;
+}
+
+.text {
+	position: relative;
+	top: 30px
+}
+
+#onepiece {
+	background: url(image/onepiece.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+}
+
+
+#fma {
+	background: url(image/fma.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+}
+
+#berserk {
+	background: url(image/berserk.jpg);
+	background-size: cover;
+	background-position: top center;
+	height: 300px;
+}
+
+#blacklagoon {
+	background: url(image/blacklagoon.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+}
+
+#trigun {
+	background: url(image/trigun.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+}
+
+footer {
+	margin-top: 10px;
+	float: right;
+	padding: 3px;
+	box-shadow: 0 0 5px black;
+	border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 599px) {
+
+	header img {
+		width: 100px;
+		top: 20px;
+	}
+
+	h1 {
+		top: 60px;
+		left: 104px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li:hover ul {
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 767px){
+	h2 {
+		font-size: 28px;
+	}
+
+	section ol li {
+		padding: 50px;
+	}
+
+}

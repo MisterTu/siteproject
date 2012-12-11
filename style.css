@@ -1,0 +1,170 @@
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	background: url(image/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+nav ul {
+	line-height: 30px;
+}
+
+nav li {
+	float: right;
+	position: relative;
+	background: black;
+}
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: lightgrey;
+}
+
+#action:hover {
+	color: red;
+}
+
+#comedy:hover {
+	color: orange;
+}
+
+#drama:hover {
+	color: dodgerblue;
+}
+
+#other li:hover a {
+	color: lawngreen;
+}
+
+#other li:hover ul a {
+	color: lightgrey;
+}
+
+#other li:hover ul a:hover {
+	color: white;
+}
+
+nav ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+
+nav ul li:hover ul {
+	visibility: visible;
+}
+
+header img {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+}
+
+#pikachu {
+	background: url(image/foreground.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	width: 40%;
+	height: 70%;
+	position: fixed;
+	right: 200px;
+	bottom: 50px;
+	animation: balloon 2.5s ease-out
+				, levitat 4s 2.5s infinite;
+}
+
+@keyframes balloon {
+	0% 		{bottom: -100%;}
+	100%	{bottom: 50px;}
+}
+
+@keyframes levitat{
+	0%		{bottom: 50px;}
+	50%		{bottom: 30px;}
+	100%	{bottom: 50px;}
+
+}
+
+section {
+	position: fixed;
+	left: 10%;
+	bottom: 20%;
+	height: 100px;
+	width: 200px;
+	color: white;
+	text-shadow: 1px 1px 10px black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 23px;
+}
+
+p {
+	text-align: justify;
+	font-size: 19px;
+	padding: 8px;
+}
+
+.news {
+	position: absolute;
+	opacity: 0;
+}
+
+#text1 {
+	animation: blend1 20s infinite;
+}
+
+#text2 {
+	animation: blend2 20s infinite;
+}
+
+#text3 {
+	animation: blend3 20s infinite;
+}
+
+#text4 {
+	animation: blend4 20s infinite;
+}
+
+@keyframes blend1 {
+	0% 		{opacity: 0;}
+	12%		{opacity: 100;}
+	25%		{opacity: 0;}
+}
+
+@keyframes blend2 {
+	25% 	{opacity: 0;}
+	37.5%	{opacity: 1;}
+	50%		{opacity: 0;}
+}
+
+@keyframes blend3 {
+	50% 	{opacity: 0;}
+	62.5%	{opacity: 1;}
+	75%		{opacity: 0;}
+}
+
+@keyframes blend4 {
+	75% 	{opacity: 0;}
+	87.5%	{opacity: 1;}
+	100%	{opacity: 0;}
+}
+
+@media screen and (max-width: 599px) {
+	nav ul li:hover ul {
+		visibility: hidden;
+	}
+
+	#pikachu {
+		right: 50px;
+	}
+}

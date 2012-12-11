@@ -1,0 +1,343 @@
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+
+nav ul {
+	line-height: 30px;
+}
+
+nav li {
+	float: right;
+	position: relative;
+	background: black;
+}
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: lightgrey;
+}
+
+#action:hover {
+	color: red;
+}
+
+#comedy:hover {
+	color: orange;
+}
+
+#drama:hover {
+	color: dodgerblue;
+}
+
+#other li:hover a {
+	color: lawngreen;
+}
+
+#other li:hover ul a {
+	color: lightgrey;
+}
+
+#other li:hover ul a:hover {
+	color: white;
+}
+
+nav ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+
+nav ul li:hover ul {
+	visibility: visible;
+}
+
+header img {
+	position: relative;
+	z-index: 100;
+	left: 20px;
+	top: 20px;
+}
+
+/* ------------------------------------------------- */
+
+
+section {
+	position: relative;
+	font-size: 19px;
+	background-color: white;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+header {
+	background-image: url(image/headercomedy.jpg);
+	background-size: cover;
+	position: relative;
+	box-shadow: inset 0 0 60px black;
+	background-color: aliceblue;
+}
+
+h1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 35px;
+	padding: 10px;
+	margin: 30px;
+	text-shadow: 0 0 5px black;
+	color: white;
+}
+
+h2 {
+	font-size: 30px;
+	padding: 20px;
+	color: white;
+	text-shadow: 2px 2px 1.5px black;
+}
+
+p {
+	text-align: justify;
+}
+
+/* ------------------------------------------------- */
+
+
+#gintama {
+	margin: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background: url(image/gintama.jpg);
+	background-size: cover;
+	background-position: top center;
+	height: 400px;
+	color: white;
+	text-shadow: 2px 2px 1.5px black;
+}
+
+#gintama p {
+	padding: 50px;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+
+#gintama:hover p{
+	opacity: 1;
+}
+
+.textbox {
+	position: absolute;
+	margin-right: 100px;
+	z-index: 100;
+	height: 400px;
+	overflow: hidden; 
+}
+
+.blackbox {
+	position: relative;
+	z-index: 10;
+	height: 400px;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+
+#gintama:hover .blackbox {
+	opacity: 0.5;
+}
+
+/* ------------------------------------------------- */
+
+#gto {
+	margin: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	height: 300px;
+	position: relative;
+}
+
+#picbox {
+	background: url(image/gto.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	z-index: 10;
+	height: 300px;
+}
+
+#gtotext {
+	background-color: white;
+	position: absolute;
+	width: 0px;
+	overflow: hidden;
+	height: 300px;
+	z-index: 100;
+	right: 0;
+	top: 0;
+	transition: width 0.5s linear;
+}
+
+#gto:hover #gtotext {
+	width: 60%;
+	height: 240px;
+	padding: 10px;
+	padding-top: 50px;
+}
+
+/* ------------------------------------------------- */
+
+#lastplaces {
+	position: relative;
+	margin: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	height: 400px;
+}
+
+.lastboxes {
+	margin: 0.85%;
+	width: 32.2%;
+	height: 400px;
+	float: left;
+}
+
+.lastpics {
+	height: 200px;
+}
+
+#angelbeats {
+	margin-left: 0;
+}
+
+#detroit {
+	float: right;
+	margin-right: 0;
+}
+
+#angelpic {
+	background: url(image/angelbeats.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#angeltext {
+	height: 0;
+	transition: height 0.25s linear;
+}
+
+#angelbeats:hover #angeltext {
+	height: 200px;
+}
+
+#hayatepic {
+	background: url(image/hayate.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#hayatetext {
+	height: 0;
+	transition: height 0.25s linear;
+}
+
+#hayate:hover #hayatetext {
+	height: 200px;
+}
+
+#detroitpic {
+	background: url(image/detroit.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#detroittext {
+	height: 0;
+	transition: height 0.25s linear;
+}
+
+#detroit:hover #detroittext {
+	height: 200px;
+}
+
+.lastboxes p {
+	padding: 10px;
+}
+
+.lasttext {
+	overflow: hidden;
+}
+
+footer {
+	margin-top: 10px;
+	float: right;
+	padding: 3px;
+	box-shadow: 0 0 5px black;
+	border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 599px) {
+
+	header img {
+		width: 100px;
+		top: 20px;
+	}
+
+	h1 {
+		top: 60px;
+		left: 104px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	h2 {
+		font-size: 28px;
+	}
+
+	section ol li {
+		padding: 50px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	#gtotext {
+		overflow: auto;
+	}
+	.textbox {
+		overflow: auto;
+	}
+
+	.lasttext {
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li:hover ul {
+		visibility: hidden;
+	}
+
+	#gintama, #gto, .lastplaces {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.textbox {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 28px;
+	}
+
+}
